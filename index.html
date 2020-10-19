@@ -16,14 +16,17 @@
 	<body>
     <header>
       <nav class="navbar navbar-light bg-secondary">
-      <a class="navbar-brand" id="brand" href="#">Busca CID</a>
+      <img src="./img/logo.png" alt="busca cid" id="brand">
       </nav>
     </header>
 
       <main ng-controller='BuscaCidController'>
+        <p id="descricao">CID-10 é o código internacional de doenças desenvolvida em 1993 para registrar as estatísticas de mortalidade.
+        <br>O site compilou as classificações para facilitar a busca pelos profissionais da saúde.
+        </p>
           <div class="flex-container">
               <div class="w-50">
-                  <input ng-model="busca" type="text" class="form-control" placeholder="Busque por qualquer trecho ou código do CID">
+                  <input id="busca" ng-model="busca" type="text" class="form-control" placeholder="Busque por qualquer trecho ou código do CID">
               </div>
           </div>
 
@@ -34,13 +37,18 @@
                   <td class="text-center">Nome</td>
                 </tr>
               </thead>
-                  <tbody id="tabelaCid" ng-repeat="cid in cids | filter:busca">
-
-                    <td class="text-center" id="codigo">{{cid.codigo}}</td>
-                    <td class="text-center" id="nome">{{cid.nome}}</td>
+                  <tbody id="tabelaCid" ng-repeat="cid in arrayJson | filter:busca | orderBy:'codigo'" ng-show='busca'>
+                    <td>{{cid.codigo}}</td>
+                    <td>{{cid.nome}}</td>
                   </tbody>
             </table>
 
       </main>
+
+      <nav class="navbar navbar-light bg-secondary" id="rodape">
+        <p class="text-white">Copyright © 2020 | Henrique Viegas</p>
+        <a id="site" class="text-white" href="https://www.buscacid.com.br">https://www.buscacid.com.br</a>
+      </nav>
+
     </body>
 </html>
