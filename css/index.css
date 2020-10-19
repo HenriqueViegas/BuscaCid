@@ -1,0 +1,47 @@
+.flex-container {
+	display: flex;
+	height: 30vh;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(15, 224, 127);
+	border-radius: 5px;
+  }
+
+/* .flex-container-table{
+	display: flex;
+	min-height: 50vh;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 1rem;
+} */
+
+#brand{
+	font-size: 2rem;
+	color: white;
+	height: 10vh;
+}
+
+main{
+	width: 90%;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+table{
+	border-radius: 5px;
+	margin: 10px 2px;
+}
+
+#nome, #codigo {
+	border:solid 1px rgb(255, 189, 202);
+	word-wrap:break-word;
+}
+
+#codigo{
+	max-width: 20px;
+}
+/* .flex-container-table table{
+
+	padding: 5px 5px;
+	width: 80%;
+} */
