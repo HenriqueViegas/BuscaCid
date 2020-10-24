@@ -1,5 +1,5 @@
 # BuscaCid
-Buscador de códigos cid de doenças para médicos.
+Buscador de códigos cid de doenças para profissionais da saúde.
 
 Há alguns locais onde é possível consultar as informações, porém estão desatualizadas e não possui uma interface simplificada
 
