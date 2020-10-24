@@ -16,9 +16,8 @@
 } */
 
 #brand{
-	font-size: 2rem;
-	color: white;
-	height: 10vh;
+	width: 15%;
+	margin: 10px 5px;
 }
 
 main{
@@ -40,8 +39,19 @@ table{
 #codigo{
 	max-width: 20px;
 }
-/* .flex-container-table table{
 
-	padding: 5px 5px;
-	width: 80%;
-} */
+#descricao{
+	font-size: 20px;
+}
+
+#rodape{
+	position: fixed;;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+}
+
+#site{
+	margin-bottom: 20px;
+	text-decoration: none;
+}
